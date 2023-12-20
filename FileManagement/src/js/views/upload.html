@@ -1,0 +1,40 @@
+<!--
+ Copyright (c) 2014, 2023, Oracle and/or its affiliates.
+ Licensed under The Universal Permissive License (UPL), Version 1.0
+ as shown at https://oss.oracle.com/licenses/upl/
+ -->
+<div class="oj-hybrid-padding">
+  <h1>Upload File to database</h1>
+  <div>
+     To upload a file to the database choose a file and click save.
+      <div class="oj-flex">
+        <div class="oj-flex-item oj-sm-12 oj-md-12 oj-lg-3 oj-xl-3 oj-panel oj-bg-brand-30
+                    oj-sm-margin-4x-vertical oj-sm-margin-4x-horizontal">
+      <oj-button on-oj-action="[[selectFiles]]">
+        <span slot="startIcon" class="oj-ux-ico-plus"></span>
+        Add Files
+      </oj-button>
+      <div class="oj-sm-padding-1x-top">
+        Selected files:
+        <oj-bind-text value="[[fileNames]]"></oj-bind-text>
+      </div>
+    </div>
+    <div>
+      
+    </div>
+  
+</div>
+<oj-button id="button1" on-oj-action="[[buttonAction]]">Save</oj-button>
+
+<oj-messages
+              id="oj-messages-id"
+              messages="[[messagesDataprovider]]"
+              display="notification"
+              display-options.category="none"
+              position='{"my":{"vertical" :"top", "horizontal": "end"}, 
+                                    "at": {"vertical": "top", "horizontal": "end"},
+                                    "of": "window"}'></oj-messages>
+</div>
+
+  </div>
+</div>
